@@ -1,42 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330">
-<defs>
- <filter id="g"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <path id="p1" d="M60 210 C170 80 290 300 420 170 S670 70 790 205 S1010 300 1140 120"/>
- <path id="p2" d="M60 235 C200 140 310 310 470 215 S690 130 840 235 S1020 285 1140 180"/>
-</defs>
-<rect width="1200" height="330" rx="24" fill="#050505" stroke="#333"/>
-<g opacity=".15" stroke="#fff">
- <path d="M50 80H1150M50 120H1150M50 160H1150M50 200H1150M50 240H1150M50 280H1150"/>
+<defs><filter id="g"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="fade"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<rect width="1200" height="330" rx="22" fill="#050505" stroke="#333"/>
+<text x="42" y="45" fill="#777" font-family="monospace" font-size="12" letter-spacing="4">MARATHON / ASTORAST LIVE ROUTE</text>
+<text x="1158" y="45" text-anchor="end" fill="#555" font-family="monospace" font-size="11">PACE // CONTINUOUS</text>
+<g opacity=".45" stroke="#222">
+<path d="M40 90H1160M40 135H1160M40 180H1160M40 225H1160"/>
 </g>
-<text x="45" y="45" fill="#777" font-family="monospace" font-size="12" letter-spacing="4">AST MARATHON / RACE TELEMETRY</text>
-<!-- two race lanes -->
-<use href="#p1" fill="none" stroke="#222" stroke-width="28"/>
-<use href="#p2" fill="none" stroke="#222" stroke-width="28"/>
-<use href="#p1" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="10 14"><animate attributeName="stroke-dashoffset" from="0" to="-240" dur="2s" repeatCount="indefinite"/></use>
-<use href="#p2" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="10 14"><animate attributeName="stroke-dashoffset" from="0" to="-240" dur="2.8s" repeatCount="indefinite"/></use>
-<!-- runners -->
+<path id="route" d="M55 235 C160 80 260 280 390 155 S610 90 735 210 S940 275 1145 110" fill="none" stroke="#202020" stroke-width="18"/>
+<use href="#route" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="6 14">
+<animate attributeName="stroke-dashoffset" from="0" to="-240" dur="2s" repeatCount="indefinite"/></use>
 <g filter="url(#g)">
- <g>
-  <circle cx="0" cy="-20" r="7" fill="#fff"/><path d="M0-12L-3 10M-3 0L-20 8M-3 0L18-8M-3 10L-17 28M-3 10L17 24" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-  <animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#p1"/></animateMotion>
- </g>
- <g opacity=".6">
-  <circle cx="0" cy="-20" r="6" fill="#fff"/><path d="M0-12L-3 10M-3 0L-18 8M-3 0L17-8M-3 10L-17 27M-3 10L17 23" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-  <animateMotion dur="7.5s" repeatCount="indefinite" rotate="auto"><mpath href="#p2"/></animateMotion>
- </g>
+<circle r="7" fill="#fff"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto" href="#route"/></circle>
+<circle r="22" fill="none" stroke="#aaa"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto" href="#route"/><animate attributeName="r" values="10;30;10" dur="1s" repeatCount="indefinite"/></circle>
 </g>
-<!-- animated split panels -->
-<g font-family="monospace">
- <g transform="translate(55 265)">
-  <text fill="#555" font-size="10">LAP</text><text x="45" fill="#fff" font-size="15"><animate attributeName="textContent" values="01;02;03;04;05;06" dur="6s" repeatCount="indefinite"/> / 06</text>
-  <rect y="18" width="300" height="3" fill="#222"/><rect y="18" width="40" height="3" fill="#aaa"><animate attributeName="width" values="20;280;40" dur="3s" repeatCount="indefinite"/></rect>
- </g>
- <g transform="translate(450 265)">
-  <text fill="#555" font-size="10">SIGNAL</text><text x="70" fill="#fff" font-size="15">ACTIVE</text>
-  <circle cx="155" cy="-4" r="4" fill="#fff"><animate attributeName="r" values="2;7;2" dur="1s" repeatCount="indefinite"/></circle>
- </g>
- <g transform="translate(760 265)">
-  <text fill="#555" font-size="10">PACE</text><text x="50" fill="#fff" font-size="15">∞:∞</text>
- </g>
+<g font-family="monospace" font-size="10" fill="#666">
+<text x="55" y="260">START</text><text x="385" y="145">BUILD</text><text x="730" y="200">SHIP</text><text x="1120" y="100">NEXT</text>
 </g>
+<g transform="translate(55 292)"><rect width="1090" height="2" fill="#222"/><rect width="120" height="2" fill="#fff"><animate attributeName="width" values="120;900;240;120" dur="4s" repeatCount="indefinite"/></rect></g>
 </svg>

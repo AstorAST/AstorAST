@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170">
+<defs><pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern></defs>
+<rect width="1200" height="170" rx="22" fill="#050505" stroke="#333"/><rect width="1200" height="170" rx="22" fill="url(#g)"/>
+<text x="35" y="38" fill="#666" font-family="monospace" font-size="11" letter-spacing="4">TOOLCHAIN / MOVING STACK</text>
+<g font-family="monospace" font-size="12">
+<g transform="translate(35 70)"><rect width="170" height="46" rx="8" fill="#111" stroke="#333"><animate attributeName="y" values="0;-3;0" dur="2s" repeatCount="indefinite"/></rect><text x="18" y="29" fill="#fff">HTML / CSS</text></g>
+<g transform="translate(225 70)"><rect width="170" height="46" rx="8" fill="#111" stroke="#333"><animate attributeName="y" values="0;3;0" dur="2.4s" repeatCount="indefinite"/></rect><text x="18" y="29" fill="#fff">JavaScript / TS</text></g>
+<g transform="translate(415 70)"><rect width="170" height="46" rx="8" fill="#111" stroke="#333"><animate attributeName="y" values="0;-3;0" dur="2.2s" repeatCount="indefinite"/></rect><text x="18" y="29" fill="#fff">Python / Node</text></g>
+<g transform="translate(605 70)"><rect width="170" height="46" rx="8" fill="#111" stroke="#333"><animate attributeName="y" values="0;3;0" dur="2.6s" repeatCount="indefinite"/></rect><text x="18" y="29" fill="#fff">MSFS / EFB</text></g>
+<g transform="translate(795 70)"><rect width="170" height="46" rx="8" fill="#111" stroke="#333"><animate attributeName="y" values="0;-3;0" dur="2.1s" repeatCount="indefinite"/></rect><text x="18" y="29" fill="#fff">Git / GitHub</text></g>
+<g transform="translate(985 70)"><rect width="170" height="46" rx="8" fill="#111" stroke="#333"><animate attributeName="y" values="0;3;0" dur="2.5s" repeatCount="indefinite"/></rect><text x="18" y="29" fill="#fff">Design / Media</text></g>
+</g></svg>

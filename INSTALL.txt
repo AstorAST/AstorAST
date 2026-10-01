@@ -1,15 +1,12 @@
-# ASTteam Marathon GitHub Profile
+# AstorAST GitHub Profile
 
-Replace the contents of the ASTteam profile repository with this package.
+Put these files in the profile repository:
 
-The design is intentionally animation-first:
-- continuous marathon runner motion
-- moving race lanes and dash lines
-- animated checkpoints
-- telemetry / lap progression
-- moving finish-line scan
-- ambient motion and pulsing status indicators
+    AstorAST/AstorAST
 
-All main visual panels are local SVG files with SVG animation, so no custom CSS or JavaScript is required.
+Keep README.md at the repository root and keep the assets folder beside it.
 
-GitHub may sanitize or limit some SVG features depending on where an SVG is rendered. The core SMIL animations used here are designed to work as image embeds.
+The visual sections are self-contained animated SVGs. No JavaScript is required.
+The README also uses readme-typing-svg and GitHub stats/streak services for live external widgets.
+
+If the GitHub username is different, replace AstorAST in the stats URLs.
