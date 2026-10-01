@@ -9,21 +9,34 @@
 </div>
 
 ## About
-
-**AstorAST** is an independent creator and developer focused on building interactive worlds, software, simulation tools and media experiences.
-
-I like projects that feel alive: systems that move, interfaces that react, and worlds that keep expanding.
+**AstorAST** is an independent creator and developer operating within the AST Network, exploring the boundary between digital systems, simulation, media and fictional worlds.
+I build interactive experiences where interfaces behave like systems, data becomes part of the story, and every project can become another fragment of a larger world.
 
 <div align="center">
 <img src="./assets/ast-signal-run.svg" width="100%" alt="AstorAST animated marathon route">
 </div>
 
-## Current Direction
+## Network Activity
+**ASTUniverse** — **WORLD NODE // ACTIVE**
+An expanding network of worlds, characters, stories and forgotten fragments. New records continue to surface as the AST Universe expands beyond its original boundaries.
 
-- **ASTUniverse** — original world, characters, stories and media
-- **ASTSIM** — Microsoft Flight Simulator tools, aircraft systems, EFB and performance utilities
-- **Interactive Web** — experimental interfaces, visual systems and small digital experiences
-- **Media** — visual identity, motion-oriented presentation and creative experiments
+- **AST//LOST SIGNAL** — **SIGNAL // UNRESOLVED**
+An unidentified transmission buried somewhere within the AST Network. Lost records, corrupted data and unknown entities continue to point toward a layer that should not exist.
+
+- **ASTSIM** — **SIMULATION NODE // ONLINE**
+A simulation branch focused on virtual aviation, aircraft systems, EFB interfaces and performance technologies. Designed to reproduce complex systems inside another world.
+
+- **Interactive Systems** — **NETWORK LAYER // EXPANDING**
+Experimental interfaces, websites and digital environments built to behave less like pages and more like functioning systems connected to the network.
+
+- **Media Archive** — **ARCHIVE NODE // ACTIVE**
+Visual identities, motion systems, recordings and creative experiments preserved as fragments of the wider AST ecosystem.
+
+> **NETWORK STATUS:** `ONLINE`
+> **SIGNAL STATUS:** `DETECTED`
+> **UNKNOWN DATA:** `PRESENT`
+> **ACCESS:** `GRANTED`
+
 
 ## Technology
 
@@ -49,7 +62,7 @@ I like projects that feel alive: systems that move, interfaces that react, and w
 
 ## Philosophy
 
-> **Do not just ship a page. Build a system that keeps moving.**
+> **MADE THINGS FOR HUMAN, FOR AI, FOR EARTH**
 
 <div align="center">
 <img src="./assets/ast-system.svg" width="100%" alt="Animated system message">
@@ -60,6 +73,6 @@ I like projects that feel alive: systems that move, interfaces that react, and w
 
 <br><br>
 
-**KEEP RUNNING. KEEP BUILDING.**
+**JUST MADE EVERYTHING.**
 
 </div>
