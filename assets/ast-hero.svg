@@ -1,75 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
 <defs>
-  <linearGradient id="bg" x1="0" x2="1">
-    <stop offset="0" stop-color="#050505"/>
-    <stop offset=".5" stop-color="#111"/>
-    <stop offset="1" stop-color="#050505"/>
-  </linearGradient>
-  <linearGradient id="line" x1="0" x2="1">
-    <stop offset="0" stop-color="#555"/>
-    <stop offset=".5" stop-color="#fff"/>
-    <stop offset="1" stop-color="#555"/>
-  </linearGradient>
-  <filter id="glow">
-    <feGaussianBlur stdDeviation="5" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-    <rect width="4" height="2" fill="#fff" opacity=".025"/>
-  </pattern>
-  <clipPath id="clip"><rect x="28" y="28" width="1144" height="374" rx="22"/></clipPath>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050505"/><stop offset=".5" stop-color="#151515"/><stop offset="1" stop-color="#030303"/></linearGradient>
+ <linearGradient id="track" x1="0" x2="1"><stop stop-color="#333"/><stop offset=".5" stop-color="#aaa"/><stop offset="1" stop-color="#333"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+ <clipPath id="c"><rect x="25" y="25" width="1150" height="450" rx="28"/></clipPath>
+ <path id="lane" d="M-100 365 C170 280 330 470 590 350 S1010 255 1300 345"/>
 </defs>
-
-<rect width="1200" height="430" fill="#000"/>
-<rect x="28" y="28" width="1144" height="374" rx="22" fill="url(#bg)" stroke="#3b3b3b"/>
-<g clip-path="url(#clip)">
-  <rect x="28" y="28" width="1144" height="374" fill="url(#scan)"/>
-
-  <path d="M55 330 H1145" stroke="#333" stroke-width="2"/>
-  <path d="M55 330 H1145" stroke="url(#line)" stroke-width="1" stroke-dasharray="8 12">
-    <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="3s" repeatCount="indefinite"/>
-  </path>
-
-  <g opacity=".4">
-    <path d="M80 92 H1120 M80 118 H1120 M80 144 H1120" stroke="#222"/>
-    <path d="M80 270 H1120 M80 295 H1120" stroke="#222"/>
+<rect width="1200" height="500" fill="#000"/>
+<rect x="25" y="25" width="1150" height="450" rx="28" fill="url(#bg)" stroke="#333"/>
+<g clip-path="url(#c)">
+ <!-- moving atmosphere -->
+ <g opacity=".22">
+  <circle cx="150" cy="130" r="90" fill="#aaa" filter="url(#soft)"><animate attributeName="cx" values="150;1050;150" dur="18s" repeatCount="indefinite"/></circle>
+  <circle cx="1020" cy="410" r="70" fill="#777" filter="url(#soft)"><animate attributeName="cx" values="1020;120;1020" dur="13s" repeatCount="indefinite"/></circle>
+ </g>
+ <!-- speed lines -->
+ <g stroke="#777" opacity=".28">
+  <path d="M60 115H420M720 90H1120M90 150H300M820 135H1150"/>
+  <path d="M80 205H380M700 185H1080M120 250H500"/>
+  <path d="M760 245H1160"/>
+ </g>
+ <g stroke="#aaa" stroke-width="2" opacity=".25">
+  <path d="M60 115H420"><animate attributeName="x1" values="60;420;60" dur="2s" repeatCount="indefinite"/></path>
+  <path d="M720 90H1120"><animate attributeName="x1" values="1120;720;1120" dur="2.8s" repeatCount="indefinite"/></path>
+ </g>
+ <!-- marathon track -->
+ <use href="#lane" fill="none" stroke="#202020" stroke-width="70"/>
+ <use href="#lane" fill="none" stroke="#444" stroke-width="3"/>
+ <use href="#lane" fill="none" stroke="url(#track)" stroke-width="2" stroke-dasharray="18 18">
+   <animate attributeName="stroke-dashoffset" from="0" to="-360" dur="1.8s" repeatCount="indefinite"/>
+ </use>
+ <!-- lane markers -->
+ <g fill="#aaa">
+  <circle r="3"><animateMotion dur="6s" repeatCount="indefinite" path="M-100 365 C170 280 330 470 590 350 S1010 255 1300 345"/></circle>
+  <circle r="3"><animateMotion dur="4.7s" repeatCount="indefinite" path="M-100 365 C170 280 330 470 590 350 S1010 255 1300 345"/></circle>
+  <circle r="3"><animateMotion dur="8s" repeatCount="indefinite" path="M-100 365 C170 280 330 470 590 350 S1010 255 1300 345"/></circle>
+ </g>
+ <!-- runner silhouette -->
+ <g filter="url(#glow)">
+  <g>
+   <circle cx="0" cy="-28" r="9" fill="#fff"/>
+   <path d="M0 -18 L-3 12 L-18 35 M-3 12 L17 25 M-3 -2 L-25 8 M-3 -2 L22 -10" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+   <animateTransform attributeName="transform" type="translate" values="-90 350;1290 350;-90 350" dur="7s" repeatCount="indefinite"/>
+   <animateTransform attributeName="transform" additive="sum" type="rotate" values="-3;3;-3" dur=".38s" repeatCount="indefinite"/>
   </g>
-
-  <text x="72" y="88" fill="#777" font-family="monospace" font-size="13" letter-spacing="4">AST NETWORK / PROFILE NODE</text>
-  <text x="72" y="168" fill="#fff" font-family="monospace" font-size="70" font-weight="700" letter-spacing="2">ASTteam</text>
-  <text x="75" y="201" fill="#8b8b8b" font-family="monospace" font-size="15" letter-spacing="3">WORLD BUILDING / SOFTWARE / SIMULATION / MEDIA</text>
-
-  <g font-family="monospace" font-size="12" fill="#666">
-    <text x="75" y="250">SIGNAL</text>
-    <text x="75" y="273">NODE</text>
-    <text x="75" y="296">STATUS</text>
-  </g>
-  <g font-family="monospace" font-size="12" fill="#aaa">
-    <text x="145" y="250">AST-UNIVERSE</text>
-    <text x="145" y="273">PROFILE-01</text>
-    <text x="145" y="296">ONLINE</text>
-  </g>
-
-  <g transform="translate(870 215)">
-    <circle cx="0" cy="0" r="76" fill="none" stroke="#252525"/>
-    <circle cx="0" cy="0" r="76" fill="none" stroke="#777" stroke-width="2" stroke-dasharray="2 16">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="52" fill="none" stroke="#333" stroke-dasharray="90 240">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="6" fill="#fff" filter="url(#glow)">
-      <animate attributeName="r" values="5;9;5" dur="1.4s" repeatCount="indefinite"/>
-    </circle>
-    <path d="M-95 0 H95 M0 -95 V95" stroke="#222"/>
-  </g>
-
-  <rect x="70" y="345" width="1060" height="1" fill="#333"/>
-  <rect x="70" y="345" width="0" height="1" fill="#fff">
-    <animate attributeName="width" values="0;1060;1060;0" dur="5s" repeatCount="indefinite"/>
-  </rect>
-
-  <text x="75" y="375" fill="#555" font-family="monospace" font-size="11">CONNECTION ACTIVE</text>
-  <text x="1118" y="375" text-anchor="end" fill="#777" font-family="monospace" font-size="11">AST // LOST SIGNAL</text>
+ </g>
+ <!-- checkpoints -->
+ <g fill="#ddd" font-family="monospace" font-size="10">
+  <g transform="translate(160 300)"><rect x="-3" y="-52" width="6" height="52" fill="#777"/><rect x="-20" y="-52" width="40" height="14" fill="#222" stroke="#888"/><text x="0" y="-42" text-anchor="middle">10K</text></g>
+  <g transform="translate(600 350)"><rect x="-3" y="-65" width="6" height="65" fill="#777"/><rect x="-25" y="-65" width="50" height="14" fill="#222" stroke="#888"/><text x="0" y="-55" text-anchor="middle">HALF</text></g>
+  <g transform="translate(1000 290)"><rect x="-3" y="-70" width="6" height="70" fill="#777"/><rect x="-30" y="-70" width="60" height="14" fill="#fff"/><text x="0" y="-60" text-anchor="middle" fill="#000">FINISH</text></g>
+ </g>
+ <!-- HUD -->
+ <text x="60" y="70" fill="#aaa" font-family="monospace" font-size="12" letter-spacing="5">AST MARATHON / CONTINUOUS RUN</text>
+ <text x="1140" y="70" text-anchor="end" fill="#777" font-family="monospace" font-size="11">LIVE</text>
+ <circle cx="1120" cy="66" r="4" fill="#fff"><animate attributeName="opacity" values=".2;1;.2" dur="1s" repeatCount="indefinite"/></circle>
+ <text x="60" y="440" fill="#666" font-family="monospace" font-size="11">DISTANCE</text>
+ <text x="145" y="440" fill="#fff" font-family="monospace" font-size="18"><animate attributeName="opacity" values=".5;1;.5" dur="1.5s" repeatCount="indefinite"/>∞ KM</text>
+ <text x="980" y="440" fill="#666" font-family="monospace" font-size="11">PACE</text>
+ <text x="1030" y="440" fill="#fff" font-family="monospace" font-size="18">∞:∞</text>
+ <!-- finish scan -->
+ <rect x="65" y="455" width="1070" height="1" fill="#333"/>
+ <rect x="65" y="455" width="80" height="2" fill="#fff"><animate attributeName="x" values="65;1055;65" dur="4s" repeatCount="indefinite"/></rect>
 </g>
 </svg>
