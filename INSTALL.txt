@@ -7,6 +7,6 @@ Put these files in the profile repository:
 Keep README.md at the repository root and keep the assets folder beside it.
 
 The visual sections are self-contained animated SVGs. No JavaScript is required.
-The README also uses readme-typing-svg and GitHub stats/streak services for live external widgets.
+The GitHub contribution graph is loaded from an external service; remove that image if you prefer a fully self-hosted profile.
 
-If the GitHub username is different, replace AstorAST in the stats URLs.
+If the GitHub username is different, replace AstorAST in the contribution graph URL in README.md.
