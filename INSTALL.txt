@@ -6,7 +6,6 @@ Put these files in the profile repository:
 
 Keep README.md at the repository root and keep the assets folder beside it.
 
-The visual sections are self-contained animated SVGs. No JavaScript is required.
-The GitHub contribution graph is loaded from an external service; remove that image if you prefer a fully self-hosted profile.
+The full profile is a single self-contained animated SVG at assets/ast-profile.svg. No JavaScript or external image service is required.
 
-If the GitHub username is different, replace AstorAST in the contribution graph URL in README.md.
+If the GitHub username is different, update the displayed profile name in assets/ast-profile.svg.
