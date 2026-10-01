@@ -6,6 +6,6 @@ Put these files in the profile repository:
 
 Keep README.md at the repository root and keep the assets folder beside it.
 
-The full profile is a single self-contained animated SVG at assets/ast-profile.svg. No JavaScript or external image service is required.
+The full profile is a single self-contained animated SVG at assets/ast-profile.svg. The ASTORAST logo is also kept at assets/ASTORLOGO.PNG and embedded in the SVG so GitHub does not need to resolve a relative image path. No JavaScript or external image service is required.
 
 If the GitHub username is different, update the displayed profile name in assets/ast-profile.svg.
