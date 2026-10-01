@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150">
+<rect width="1200" height="150" rx="18" fill="#050505" stroke="#333"/>
+<g font-family="monospace">
+<text x="35" y="38" fill="#666" font-size="11" letter-spacing="3">SYSTEM MESSAGE</text>
+<text x="35" y="82" fill="#fff" font-size="22">THE SIGNAL IS STILL RUNNING.</text>
+<text x="35" y="112" fill="#666" font-size="11">BUILD THE WORLD. WRITE THE SYSTEM. FOLLOW THE SIGNAL.</text>
+<rect x="1030" y="58" width="110" height="2" fill="#333"/>
+<rect x="1030" y="58" width="0" height="2" fill="#fff">
+<animate attributeName="width" values="0;110;0" dur="1.8s" repeatCount="indefinite"/>
+</rect>
+</g>
+</svg>

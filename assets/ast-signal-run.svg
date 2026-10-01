@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+<defs>
+  <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="260" rx="18" fill="#050505" stroke="#333"/>
+<text x="40" y="42" fill="#777" font-family="monospace" font-size="12" letter-spacing="3">AST SIGNAL RUN / LIVE TRANSMISSION</text>
+<text x="1160" y="42" text-anchor="end" fill="#555" font-family="monospace" font-size="12">DISTANCE 07.4 KM</text>
+
+<path d="M55 170 C180 90 300 220 430 145 S680 95 790 170 S1010 220 1145 120" fill="none" stroke="#242424" stroke-width="12"/>
+<path d="M55 170 C180 90 300 220 430 145 S680 95 790 170 S1010 220 1145 120" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="9 13">
+  <animate attributeName="stroke-dashoffset" from="0" to="-220" dur="2.5s" repeatCount="indefinite"/>
+</path>
+
+<g>
+  <circle r="7" fill="#fff" filter="url(#g)">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" path="M55 170 C180 90 300 220 430 145 S680 95 790 170 S1010 220 1145 120"/>
+  </circle>
+  <circle r="18" fill="none" stroke="#777" opacity=".7">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" path="M55 170 C180 90 300 220 430 145 S680 95 790 170 S1010 220 1145 120"/>
+    <animate attributeName="r" values="10;26;10" dur="1s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<g font-family="monospace" font-size="10" fill="#666">
+  <text x="55" y="205">START</text>
+  <text x="425" y="125">AST-01</text>
+  <text x="785" y="205">LOST-SIGNAL</text>
+  <text x="1080" y="105">DEEP-LAYER</text>
+</g>
+
+<g transform="translate(55 225)">
+  <rect width="1090" height="2" fill="#222"/>
+  <rect width="410" height="2" fill="#aaa">
+    <animate attributeName="width" values="220;850;410;220" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</g>
+</svg>

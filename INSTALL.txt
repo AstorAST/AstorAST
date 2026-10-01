@@ -1,0 +1,21 @@
+# ASTteam GitHub Profile
+
+Upload the contents of this folder to the special profile repository:
+
+    ASTteam/ASTteam
+
+The important files are:
+
+    README.md
+    assets/ast-hero.svg
+    assets/ast-signal-run.svg
+    assets/ast-system.svg
+
+The animation is contained inside the SVG files. The README does not require
+custom CSS or JavaScript.
+
+If the GitHub repository is not named exactly `ASTteam`, replace the username
+in the GitHub stats URLs inside README.md.
+
+The local SVG files are intentional: this prevents the main animated visuals
+from depending on a third-party image host.
