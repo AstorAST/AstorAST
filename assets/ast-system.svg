@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190">
-<rect width="1200" height="190" fill="#FF4D70"/><path d="M0 0h450L300 190H0z" fill="#7C54FF"/><path d="M920 0h280v190H760z" fill="#B9F34A"/>
-<text x="36" y="35" fill="#11131C" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="4">AST NETWORK / OPERATING PRINCIPLE</text>
-<text x="36" y="94" fill="#11131C" font-family="Arial,sans-serif" font-size="36" font-weight="900" letter-spacing="-1">BUILD WORLDS. CONNECT SYSTEMS.</text><text x="38" y="123" fill="#11131C" font-family="Arial,sans-serif" font-size="14">Creative work across software, simulation, original worlds and media.</text>
-<g transform="translate(1045 94)"><path d="M-64 0h128M0-64v128" stroke="#11131C" stroke-width="2"/><circle r="43" fill="none" stroke="#11131C" stroke-width="9" stroke-dasharray="45 18"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/></circle><circle r="16" fill="#FF4D70" stroke="#11131C" stroke-width="3"><animate attributeName="r" values="12;20;12" dur="1.2s" repeatCount="indefinite"/></circle><path d="m-8 0 6 7 14-17" fill="none" stroke="#11131C" stroke-width="4"/></g>
-<path d="M38 157H930" stroke="#11131C" stroke-width="3"/><path d="M38 157H190" stroke="#F3F0E8" stroke-width="5"><animate attributeName="d" values="M38 157H190;M38 157H900;M38 157H430;M38 157H190" dur="5s" repeatCount="indefinite"/></path>
-<text x="38" y="179" fill="#11131C" font-family="monospace" font-size="9" letter-spacing="2">IDEA → PROTOTYPE → WORLD</text>
-</svg>
